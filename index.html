@@ -5,8 +5,236 @@
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
-
+    <header class="main-header">
+      <!--Это лого. Посмотрев на макет, решил, что это вообще ни разу не изображение. Может сделать его заголовком первого уровня?-->
+      <h2>DEVICE</h2>
+      <!--Здесь будет Форма поиска-->
+      <span class="header-search">Поиск по сайту</span>
+      <ul class="user-navigation">
+        <li class="login-link">Войти</li>
+      </ul>
+      <ul class="visitor-navigation">
+        <li class="collate-link">Сравнить</li>
+        <li class="shopping-cart-link">Корзина</li>
+      </ul>
+      <ul class="site-navigation">
+        <li class="catalog-products">
+          Каталог товаров
+          <!--тут будет чекбокс для открытия подменю. строку "Каталог товаров и чекбокс при разметке обернуть в label"-->
+          <span></span>
+          <ul class="catalog-category">
+            <li><a href="catalog.html">Виртуальная реальность</a></li>
+            <li><a href="catalog.html">Моноподы для селфи</a></li>
+            <li><a href="catalog.html">Экшн-камеры</a></li>
+            <li><a href="catalog.html">Фитнес-браслеты</a></li>
+            <li><a href="catalog.html">Умные часы</a></li>
+            <li><a href="catalog.html">Квадрокоптеры</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Доставка</a></li>
+        <li><a href="#">Гарантия</a></li>
+        <li class="navigation-item--contacts"><a href="#">Контакты</a></li>
+      </ul>
+    </header>
+    
+    <main class="container">
+      <h1 class="visually-hidden">Интернет-магазин DEVICE</h1>
+      <section class="popular-products">
+        <h2 class="visually-hidden">Популярные товары</h2>
+        <ul class="popular-list">
+          <li class="popular-products--item">
+            <h3>01</h3>
+            <img src="img/popular-product-1.jpg" width="383" height="480" alt="Изображение палки для селфи">
+            <section class="product-info">
+              <h4>
+                Делай селфи,<br>
+                как Бен Стиллер!
+              </h4>
+              <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+              <a href="selfi-stick.html">Подробнее</a>
+              <span><!--Здесь будет пагинатор слайдера популярных товаров--></span>
+              <table class="item-specifics">
+                <tr>
+                  <th>Длина палки</th>
+                  <th>Вес палки</th>
+                  <th>Материал</th>
+                </tr>
+                <tr>
+                  <td>8,5 м</td>
+                  <td>5 кг</td>
+                  <td>Карбон</td>
+                </tr>
+              </table>
+            </section>
+          </li>
+          <li class="popular-products--item">
+            <h3>02</h3>
+            <img src="img/popular-product-2.jpg" width="383" height="480" alt="Изображение фитнес-браслета">
+            <section class="product-info">
+              <h4>
+                Худеем<br>
+                правильно!
+              </h4>
+              <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+              <a href="fitbit.html">Подробнее</a>
+              <span><!--Здесь будет пагинатор слайдера популярных товаров--></span>
+              <table class="item-specifics">
+                <tr>
+                  <th>Без подзарядки</th>
+                </tr>
+                <tr>
+                  <td>48 часов</td>
+                </tr>
+              </table>
+            </section>
+          </li>
+          <li class="popular-products--item">
+            <h3>03</h3>
+            <img src="img/popular-product-3.jpg" width="383" height="480" alt="Изображение квадрокоптера">
+            <section class="product-info">
+              <h4>
+                Порхает как бабочка,<br>
+                жалит как пчела!
+              </h4>
+              <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+              <a href="quadrocopter.html">Подробнее</a>
+              <span><!--Здесь будет пагинатор слайдера популярных товаров--></span>
+              <table class="item-specifics">
+                <tr>
+                  <th>Дальность полета</th>
+                  <th>Радиус поражения</th>
+                </tr>
+                <tr>
+                  <td>800 м</td>
+                  <td>50 м</td>
+                </tr>
+              </table>
+            </section>
+          </li>
+        </ul>
+       </section>
+      
+      <section class="product-category">
+        <h3 class="visually-hidden">Категории товаров</h3>
+        <table>
+          <tr>
+            <th><a href="catalog.html">Виртуальная реальность</a></th>
+            <th><a href="catalog.html">Моноподы для селфи</a></th>
+            <th><a href="catalog.html">Экшн-камеры</a></th>
+            <th><a href="catalog.html">Фитнес-браслеты</a></th>
+            <th><a href="catalog.html">Умные часы</a></th>
+            <th><a href="catalog.html">Квадрокоптеры</a></th>
+          </tr>
+          <tr>
+            <!--Изображения разделов сделаю фоновыми с помощью CSS-->
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+      </section>
+      
+      <section class="services">
+        <h2 class="visually-hidden">Наши сервисы</h2>
+        <nav class="services-nav">
+          <ul>
+            <li class="services-nav-btn">Доставка</li>
+            <li class="services-nav-btn">Гарантия</li>
+            <li class="services-nav-btn">Кредит</li>
+          </ul>
+        </nav>
+        <section class="services--delivery">
+          <h3>Доставка</h3>
+          <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо зарабатываем, поднимая его на ваш этаж.</p>
+          <!--Здесь будет блок под иконку, но это не точно-->
+        </section>
+        <section class="services--warranty">
+          <h3>Гарантия</h3>
+          <p>Если из-за возгорания купленного у нас товара у вас сгорит дом - не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+          <!--Здесь будет блок под иконку, но это не точно-->
+        </section>
+        <section class="services--credit">
+          <h3>Кредит</h3>
+          <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+          <!--Здесь будет блок под иконку, но это не точно-->
+        </section>
+      </section>
+      
+      <section class="brands">
+        <h2 class="visually-hidden">Бренды товаров</h2>
+        <!--Все логотипы брендов планирую вставить как фоновые изображения CSS скрыв написанные названия в списке-->
+        <ul class="brand-list">
+          <li><h3 class="visually-hidden">dji</h3></li>
+          <li><h3 class="visually-hidden">SP Gadgets</h3></li>
+          <li><h3 class="visually-hidden">GoPro</h3></li>
+          <li><h3 class="visually-hidden">Vive</h3></li>
+        </ul>
+      </section>
+      
+      <section class="about-market">
+        <h2 class="visually-hidden">О магазине</h2>
+        <section class="about-us">
+          <h3>О нас</h3>
+          <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас</p>
+          <!--Вопрос к наставнику: Объединить в один абзац разделив тегом <br> или оставить два абзаца?-->
+          <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+          <ul>
+            <li>Деловые линии</li>
+            <li>Автотрейдинг</li>
+            <li>ЖелДорЭкспедиция</li>
+          </ul>
+          <a href="about_us.html">Подробнее о нас</a>
+        </section>
+        
+        <section class="contacts">
+          <h3>Контакты</h3>
+          <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает. </p>
+          <!--Вопрос к наставнику: Оборачивать ли эти две ссылки в список или это явно лишнее? Или можно это все включить в один абзац, который на 189 строке?-->
+          <a href="#"><img src="img/minimap.jpg" width="560" height="222" alt="изображение мини карты"></a>
+          <a class="popap-btn" href="#">Напишите нам</a>
+        </section>
+      </section>
+    </main>
+    
+    <footer class="main-footer">
+      <h2>DEVICE</h2>
+      <ul class="footer--user-navigation">
+        <li class="login-link">Войти</li>
+      </ul>
+      <ul class="footer--visitor-navigation">
+        <li class="collate-link">Сравнить</li>
+        <li class="shopping-cart-link">Корзина</li>
+      </ul>
+      <p class="location">г. Москва, ул. Строителей, 15</p>
+      <ul class="footer--service-navigation">
+        <li><a href="#">Доставка</a></li>
+        <li><a href="#">Гарантия</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+      <!--Вопрос наставнику: Надо ли номер телефона делать ссылкой с типом "телфон"?-->
+      <p class="phone-number">Тел.:+7(495)-95-95</p>
+      <ul class="footer-social">
+        <li><a class="social-button" href="#"><img src="img/fb-ico.svg" width="33" height="33" alt="Facebook"></a></li>
+       <li><a class="social-button" href="#"><img src="img/instagram-ico.svg" width="33" height="33" alt="Instagram"></a></li>
+       <li><a class="social-button" href="#"><img src="img/twitter-ico.svg" width="33" height="33" alt="Twitter"></a></li>
+      </ul>
+      <a class="button" href="https://htmlacademy.ru"><img src="img/academy-ico.svg" width="28" height="35" alt="HTML Academy"></a>
+    </footer>
+    
+<!--Pop up's-->
+    <section class="modal modal-write-us">
+      <h2 class="visually-hidden">Форма обратной связи</h2>
+      <!-- Здесь будет форма -->
+      <span class="modal-close">x</span>
+    </section>
+    
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <span class="modal-close">x</span>
+    </section>
+    
   </body>
 </html>
