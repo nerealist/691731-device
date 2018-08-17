@@ -7,17 +7,17 @@
 
   <body>
     <header class="main-header">
-      <!--Это лого. Посмотрев на макет, решил, что это вообще ни разу не изображение. Может сделать его заголовком первого уровня?-->
-      <h2><a href="index.html">DEVICE</a></h2>
+      <h2 class="visually-hidden">DEVICE</h2>
+      <a href="index.html"><img src="img/logo.png" width="164" height="36" alt=""></a>
       <!--Здесь будет Форма поиска-->
       <span class="header-search">Поиск по сайту</span>
       <ul class="user-navigation">
-        <li class="login-link--enter">Валентин Петухов</li>
+        <li class="login-link--enter"><a href="profile.html"><!--тут будет элемент для иконки-->Валентин Петухов</a></li>
         <li class="logout-link">Выйти</li>
       </ul>
       <ul class="visitor-navigation">
-        <li class="collate-link">Сравнить</li>
-        <li class="shopping-cart-link">Корзина</li>
+        <li class="collate"><a href="#">Сравнить</a></li>
+        <li class="shopping-cart"><a href="#">Корзина</a></li>
       </ul>
       <ul class="site-navigation">
         <li class="catalog-products">
@@ -41,8 +41,8 @@
     <main class="container">
       <h1>Моноподы для селфи</h1>
       <ul class="breadcrumbs">
-        <li><a href="index.html">Главная &#8250;</a></li>
-        <li><a href="catalog.html">Каталог товаров &#8250;</a></li>
+        <li><a href="index.html">Главная</a><!--&#8250; - вставить этот символ псевдоэлементом при стилизации через псевдоэлемент :before--></li>
+        <li><a href="catalog.html">Каталог товаров</a><!--&#8250; - вставить этот символ псевдоэлементом при стилизации через псевдоэлемент :before--></li>
         <li class="breadcrumbs--active">Моноподы для селфи</li>
       </ul>
       <section class="filters">
@@ -144,14 +144,15 @@
     </main>
     
     <footer class="main-footer">
-      <h2><a href="index.html">DEVICE</a></h2>
+      <h2 class="visually-hidden">DEVICE</h2>
+      <a href="index.html"><img src="img/logo-footer.png" width="164" height="36" alt=""></a>
       <ul class="footer--user-navigation">
         <li class="login-link--enter">Валентин Петухов</li>
         <li class="logout-link">Выйти</li>
       </ul>
       <ul class="footer--visitor-navigation">
-        <li class="collate-link">Сравнить</li>
-        <li class="shopping-cart-link">Корзина</li>
+        <li class="collate"><a href="#">Сравнить</a></li>
+        <li class="shopping-cart"><a href="#">Корзина</a></li>
       </ul>
       <p class="location">г. Москва, ул. Строителей, 15</p>
       <ul class="footer--service-navigation">
@@ -159,8 +160,7 @@
         <li><a href="#">Гарантия</a></li>
         <li><a href="#">Контакты</a></li>
       </ul>
-      <!--Вопрос наставнику: Надо ли номер телефона делать ссылкой с типом "телфон"?-->
-      <p class="phone-number">Тел.:+7(495)-95-95</p>
+      <a class="phone-number" href="tel:+74959595">Тел.:+7(495)-95-95</a>
       <ul class="footer-social">
         <li><a class="social-button" href="#"><img src="img/fb-ico.svg" width="33" height="33" alt="Facebook"></a></li>
         <li><a class="social-button" href="#"><img src="img/instagram-ico.svg" width="33" height="33" alt="Instagram"></a></li>

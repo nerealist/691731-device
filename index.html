@@ -6,16 +6,16 @@
   </head>
   <body>
     <header class="main-header">
-      <!--Это лого. Вопрос наставнику: Посмотрев на макет, решил, что это вообще ни разу не изображение. Может сделать его заголовком первого уровня?-->
-      <h2>DEVICE</h2>
+      <h2 class="visually-hidden">DEVICE</h2>
+      <img src="img/logo.png" width="164" height="36" alt="">
       <!--Здесь будет Форма поиска-->
       <span class="header-search">Поиск по сайту</span>
       <ul class="user-navigation">
         <li class="login-link">Войти</li>
       </ul>
       <ul class="visitor-navigation">
-        <li class="collate-link">Сравнить</li>
-        <li class="shopping-cart-link">Корзина</li>
+        <li class="collate"><a href="#">Сравнить</a></li>
+        <li class="shopping-cart"><a href="#">Корзина</a></li>
       </ul>
       <ul class="site-navigation">
         <li class="catalog-products">
@@ -43,13 +43,13 @@
         <h2 class="visually-hidden">Популярные товары</h2>
         <ul class="popular-list">
           <li class="popular-products--item">
-            <h3>01</h3>
+            <p>01</p>
             <img src="img/slider-1.png" width="383" height="480" alt="Изображение палки для селфи">
             <section class="product-info">
-              <h4>
+              <h3>
                 Делай селфи,<br>
                 как Бен Стиллер!
-              </h4>
+              </h3>
               <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
               <a href="selfi-stick.html">Подробнее</a>
               <span><!--Здесь будет пагинатор слайдера популярных товаров--></span>
@@ -68,13 +68,13 @@
             </section>
           </li>
           <li class="popular-products--item">
-            <h3>02</h3>
+            <p>02</p>
             <img src="img/slider-2.png" width="383" height="480" alt="Изображение фитнес-браслета">
             <section class="product-info">
-              <h4>
+              <h3>
                 Худеем<br>
                 правильно!
-              </h4>
+              </h3>
               <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
               <a href="fitbit.html">Подробнее</a>
               <span><!--Здесь будет пагинатор слайдера популярных товаров--></span>
@@ -89,13 +89,13 @@
             </section>
           </li>
           <li class="popular-products--item">
-            <h3>03</h3>
+            <p>03</p>
             <img src="img/slider-3.png" width="383" height="480" alt="Изображение квадрокоптера">
             <section class="product-info">
-              <h4>
+              <h3>
                 Порхает как бабочка,<br>
                 жалит как пчела!
-              </h4>
+              </h3>
               <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
               <a href="quadrocopter.html">Подробнее</a>
               <span><!--Здесь будет пагинатор слайдера популярных товаров--></span>
@@ -116,25 +116,56 @@
       
       <section class="product-category">
         <h3 class="visually-hidden">Категории товаров</h3>
-        <table>
-          <tr>
-            <th><a href="catalog.html">Виртуальная реальность</a></th>
-            <th><a href="catalog.html">Моноподы для селфи</a></th>
-            <th><a href="catalog.html">Экшн-камеры</a></th>
-            <th><a href="catalog.html">Фитнес-браслеты</a></th>
-            <th><a href="catalog.html">Умные часы</a></th>
-            <th><a href="catalog.html">Квадрокоптеры</a></th>
-          </tr>
-          <tr>
-            <!--Изображения разделов сделаю фоновыми с помощью CSS-->
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-        </table>
+        <ul class="category-list">
+          <li class="category-item">
+            <a href="catalog.html">
+              <figure>
+                <img src="img/popular-1.svg" width="160" height="160" alt="">
+                <figcaption>Виртуальная реальность</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="category-item">
+            <a href="catalog.html">
+              <figure>
+                <img src="img/popular-2.svg" width="160" height="160" alt="">
+                <figcaption>Моноподы для селфи</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="category-item">
+            <a href="catalog.html">
+              <figure>
+                <img src="img/popular-3.svg" width="160" height="160" alt="">
+                <figcaption>Экшн-камеры</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="category-item">
+            <a href="catalog.html">
+              <figure>
+                <img src="img/popular-4.svg" width="160" height="160" alt="">
+                <figcaption>Фитнес-браслеты</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="category-item">
+            <a href="catalog.html">
+              <figure>
+                <img src="img/popular-5.svg" width="160" height="160" alt="">
+                <figcaption>Умные часы</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="category-item">
+            <a href="catalog.html">
+              <figure>
+                <img src="img/popular-6.svg" width="160" height="160" alt="">
+                <figcaption>Квадрокоптеры</figcaption>
+              </figure>
+            </a>
+          </li>
+        </ul>
       </section>
       
       <section class="services">
@@ -165,12 +196,11 @@
       
       <section class="brands">
         <h2 class="visually-hidden">Бренды товаров</h2>
-        <!--Все логотипы брендов планирую вставить как фоновые изображения CSS скрыв написанные названия в списке-->
         <ul class="brand-list">
-          <li><h3 class="visually-hidden">dji</h3></li>
-          <li><h3 class="visually-hidden">SP Gadgets</h3></li>
-          <li><h3 class="visually-hidden">GoPro</h3></li>
-          <li><h3 class="visually-hidden">Vive</h3></li>
+          <li><img src="img/logo-1.jpg" width="260" height="100" alt="dji"></li>
+          <li><img src="img/logo-2.jpg" width="260" height="100" alt="sp gadgets"></li>
+          <li><img src="img/logo-3.jpg" width="260" height="100" alt="GoPro"></li>
+          <li><img src="img/logo-4.jpg" width="260" height="100" alt="vive"></li>
         </ul>
       </section>
       
@@ -179,7 +209,6 @@
         <section class="about-us">
           <h3>О нас</h3>
           <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас</p>
-          <!--Вопрос к наставнику: Объединить в один абзац разделив тегом <br> или оставить два абзаца?-->
           <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
           <ul>
             <li>Деловые линии</li>
@@ -192,7 +221,6 @@
         <section class="contacts">
           <h3>Контакты</h3>
           <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает. </p>
-          <!--Вопрос к наставнику: Оборачивать ли эти две ссылки в список или это явно лишнее? Или можно это все включить в один абзац, который на 189 строке?-->
           <a href="#"><img src="img/map.jpg" width="560" height="222" alt="изображение мини карты"></a>
           <a class="popap-btn" href="#">Напишите нам</a>
         </section>
@@ -200,13 +228,14 @@
     </main>
     
     <footer class="main-footer">
-      <h2>DEVICE</h2>
+      <h2 class="visually-hidden">DEVICE</h2>
+      <img src="img/logo-footer.png" width="164" height="36" alt="">
       <ul class="footer--user-navigation">
         <li class="login-link">Войти</li>
       </ul>
       <ul class="footer--visitor-navigation">
-        <li class="collate-link">Сравнить</li>
-        <li class="shopping-cart-link">Корзина</li>
+        <li class="collate"><a href="#">Сравнить</a></li>
+        <li class="shopping-cart"><a href="#">Корзина</a></li>
       </ul>
       <p class="location">г. Москва, ул. Строителей, 15</p>
       <ul class="footer--service-navigation">
@@ -214,8 +243,7 @@
         <li><a href="#">Гарантия</a></li>
         <li><a href="#">Контакты</a></li>
       </ul>
-      <!--Вопрос наставнику: Надо ли номер телефона делать ссылкой с типом "телфон"?-->
-      <p class="phone-number">Тел.:+7(495)-95-95</p>
+      <a class="phone-number" href="tel:+74959595">Тел.:+7(495)-95-95</a>
       <ul class="footer-social">
         <li><a class="social-button" href="#"><img src="img/fb-ico.svg" width="33" height="33" alt="Facebook"></a></li>
        <li><a class="social-button" href="#"><img src="img/instagram-ico.svg" width="33" height="33" alt="Instagram"></a></li>
