@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+  <meta charset="UTF-8">
+  <title>Каталог</title>
+  </head>
+
+  <body>
+    <header class="main-header">
+      <!--Это лого. Посмотрев на макет, решил, что это вообще ни разу не изображение. Может сделать его заголовком первого уровня?-->
+      <h2><a href="index.html">DEVICE</a></h2>
+      <!--Здесь будет Форма поиска-->
+      <span class="header-search">Поиск по сайту</span>
+      <ul class="user-navigation">
+        <li class="login-link--enter">Валентин Петухов</li>
+        <li class="logout-link">Выйти</li>
+      </ul>
+      <ul class="visitor-navigation">
+        <li class="collate-link">Сравнить</li>
+        <li class="shopping-cart-link">Корзина</li>
+      </ul>
+      <ul class="site-navigation">
+        <li class="catalog-products">
+          Каталог товаров
+          <!--тут будет чекбокс для открытия подменю. строку "Каталог товаров и чекбокс при разметке обернуть в label"-->
+          <span></span>
+          <ul class="catalog-category">
+            <li><a href="catalog.html">Виртуальная реальность</a></li>
+            <li><a href="catalog.html">Моноподы для селфи</a></li>
+            <li><a href="catalog.html">Экшн-камеры</a></li>
+            <li><a href="catalog.html">Фитнес-браслеты</a></li>
+            <li><a href="catalog.html">Умные часы</a></li>
+            <li><a href="catalog.html">Квадрокоптеры</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Доставка</a></li>
+        <li><a href="#">Гарантия</a></li>
+        <li class="navigation-item--contacts"><a href="#">Контакты</a></li>
+      </ul>
+    </header>
+    <main class="container">
+      <h1>Моноподы для селфи</h1>
+      <ul class="breadcrumbs">
+        <li><a href="index.html">Главная &#8250;</a></li>
+        <li><a href="catalog.html">Каталог товаров &#8250;</a></li>
+        <li class="breadcrumbs--active">Моноподы для селфи</li>
+      </ul>
+      <section class="filters">
+        <h2>Фильтр:</h2>
+        <section class="filter--price">
+          <!--Это все будущая форма фильтра-->
+          <h3>Стоимость</h3>
+          <!--Тут будет ползунок цены-->
+          <span>от 0 до 5000</span>
+        </section>
+        <section class="filter--color">
+          <h3>Цвет</h3>
+          <ul class="color--list">
+            <!--Тут будут чекбоксы с выбором цвета-->
+            <li>Черный</li>
+            <li>Белый</li>
+            <li>Синий</li>
+            <li>Красный</li>
+            <li>Розовый</li>
+          </ul>
+        </section>
+        <section class="filter--bluetooth">
+          <h3>Bluetooth</h3>
+          <!--Тут будет два чекбокса-->
+          <span>Есть</span>
+          <span>Нет</span>
+        </section>
+        <!--Тут будет кнопка "Показать" вместо тега span-->
+        <span>Показать</span>
+      </section>
+      <section class="catalog-items>">
+        <h2 class="visually-hidden">Каталог моноподов</h2>
+        <section class="sortation">
+          <p>Сортировка:</p>
+          <!--тут будут чекбоксы сортировки-->
+          <span>По цене</span>
+          <span>По типу</span>
+          <span>По популярности</span>
+          <!--Это будут треугольники-->
+          <span>По возрастанию</span>
+          <span>По убыванию</span>
+        </section>
+        <section class="catalog-list">
+          <ul class="list-products">
+            <li class="product-item">
+              <h3>Любительская селфи-палка</h3>
+              <img src="img/product-1.jpg" width="360" height="382" alt="Фото любительской селфи-палки">
+              <span class="new-item visually-hidden">New</span>
+              <p class="catalog-item--price">500 руб.</p>
+              <!--Эта часть будет потом скрыта и появляться при наведении на товар-->
+              <p class="buttons-purchase">
+                <a class="button" href="#">В корзину</a>
+                <a class="button" href="#">Добавить к сравнению</a>
+              </p>
+            </li>
+            <li class="product-item">
+              <h3>Профессиональная селфи-палка</h3>
+              <img src="img/product-2.jpg" width="360" height="382" alt="Фото профессиональной селфи-палки">
+              <span class="new-item visually-hidden">New</span>
+              <p class="catalog-item--price">1 500 руб.</p>
+              <!--Эта часть будет потом скрыта и появляться при наведении на товар-->
+              <p class="buttons-purchase">
+                <a class="button" href="#">В корзину</a>
+                <a class="button" href="#">Добавить к сравнению</a>
+              </p>
+            </li>
+            <li class="product-item">
+              <h3>Непотопляемая селфи-палка</h3>
+              <img src="img/product-3.jpg" width="360" height="382" alt="Фото непотопляемой селфи-палки">
+              <span class="new-item visually-hidden">New</span>
+              <p class="catalog-item--price">2 500 руб.</p>
+              <!--Эта часть будет потом скрыта и появляться при наведении на товар-->
+              <p class="buttons-purchase">
+                <a class="button" href="#">В корзину</a>
+                <a class="button" href="#">Добавить к сравнению</a>
+              </p>
+            </li>
+            <li class="product-item">
+              <h3>Селфи-палка «Следуй за мной»</h3>
+              <img src="img/product-4.jpg" width="360" height="382" alt="Фото селфи-палки «Следуй за мной»">
+              <span class="new-item">New</span>
+              <p class="catalog-item--price">500 руб.</p>
+              <!--Эта часть будет потом скрыта и появляться при наведении на товар-->
+              <p class="buttons-purchase">
+                <a class="button" href="#">В корзину</a>
+                <a class="button" href="#">Добавить к сравнению</a>
+              </p>
+            </li>
+          </ul>
+          <ul class="pagination-list">
+            <li class="pagination-item"><a href="#">Назад</a></li>
+            <li class="pagination-item pagination-item-current"><a>1</a></li>
+            <li class="pagination-item"><a href="#">2</a></li>
+            <li class="pagination-item"><a href="#">3</a></li>
+            <li class="pagination-item"><a href="#">Вперед</a></li>
+          </ul>
+        </section>
+      </section>
+    </main>
+    
+    <footer class="main-footer">
+      <h2><a href="index.html">DEVICE</a></h2>
+      <ul class="footer--user-navigation">
+        <li class="login-link--enter">Валентин Петухов</li>
+        <li class="logout-link">Выйти</li>
+      </ul>
+      <ul class="footer--visitor-navigation">
+        <li class="collate-link">Сравнить</li>
+        <li class="shopping-cart-link">Корзина</li>
+      </ul>
+      <p class="location">г. Москва, ул. Строителей, 15</p>
+      <ul class="footer--service-navigation">
+        <li><a href="#">Доставка</a></li>
+        <li><a href="#">Гарантия</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+      <!--Вопрос наставнику: Надо ли номер телефона делать ссылкой с типом "телфон"?-->
+      <p class="phone-number">Тел.:+7(495)-95-95</p>
+      <ul class="footer-social">
+        <li><a class="social-button" href="#"><img src="img/fb-ico.svg" width="33" height="33" alt="Facebook"></a></li>
+        <li><a class="social-button" href="#"><img src="img/instagram-ico.svg" width="33" height="33" alt="Instagram"></a></li>
+        <li><a class="social-button" href="#"><img src="img/twitter-ico.svg" width="33" height="33" alt="Twitter"></a></li>
+      </ul>
+      <a class="button" href="https://htmlacademy.ru"><img src="img/academy-ico.svg" width="28" height="35" alt="HTML Academy"></a>
+    </footer>
+    
+<!--Pop up's-->
+    <section class="modal modal-write-us">
+      <h2 class="visually-hidden">Форма обратной связи</h2>
+      <!-- Здесь будет форма -->
+      <span class="modal-close">x</span>
+    </section>
+  </body>
+</html>
